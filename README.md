@@ -43,17 +43,8 @@ Transformer-based models like GPT-2 offer powerful capabilities for natural lang
 
 
 ## Part 3
-For regression tasks, I trained:
-- Support Vector Regression (SVR)
-- Naive Bayes
-- Linear Regression
-- Decision Tree
 
-For classification tasks, I trained:
-- Support Vector Machine (SVM)
-- Naive Bayes
-- Logistic Regression
-- Ada Boosting
+In this part, I utilize the pre-trained BERT model (bert-base-uncased) for text classification on the Amazon Reviews dataset. The objective is to fine-tune the BERT model, adapt the embedding layer, choose optimal hyperparameters, train the model, and evaluate its performance using various metrics.
 
 
 
