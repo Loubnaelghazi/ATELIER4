@@ -22,10 +22,8 @@ The preprocessing pipeline includes:
 - Text discretization
 
 ## Part 2
-I used the following techniques for vectorization:
-- Word2Vec (CBOW and Skip Gram)
-- Bag of Words
-- TF-IDF
+This part aims to fine-tune the pre-trained GPT-2 model on a custom dataset and generate text based on a given prompt.
+
 
 ## Part 3
 For regression tasks, I trained:
