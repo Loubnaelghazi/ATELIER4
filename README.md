@@ -14,12 +14,20 @@ Part 3 BERT
 4. [Acknowledgements](#Acknowledgements)
 
 ## Part 1
-The preprocessing pipeline includes:
-- Tokenization
-- Stemming
-- Lemmatization
-- Stop words removal
-- Text discretization
+
+
+Data Collection:
+
+Using web scraping techniques, text data is collected specifically from Al Jazeera's coverage of Palestine-related news articles. This includes articles, reports, op-eds, and editorials focusing on various aspects of the Palestinian-Israeli conflict, peace negotiations, human rights issues, and regional dynamics.
+
+Text Scoring:
+
+The code defines a function generate_scores(texts) that assigns scores to each text based on the presence of specific keywords. These keywords indicate the relevance of the text to the topic of Palestine. The function iterates through each text and checks for the presence of keywords related to Palestine and adjusts the score accordingly. The scores range from 0 to 10, indicating the relevance of each text.
+
+Model Training:
+
+The code trains models using different recurrent neural network (RNN) architectures, including simple RNN, bidirectional RNN, Gated Recurrent Unit (GRU), and Long Short-Term Memory (LSTM). These models are trained on the preprocessed text data to perform classification or regression tasks. The goal is to predict the relevance scores assigned to each text based on its content.
+
 
 ## Part 2
 This part aims to fine-tune the pre-trained GPT-2 model on a custom dataset and generate text based on a given prompt.
@@ -57,4 +65,4 @@ In conclusion, fine-tuning the pre-trained BERT model for sentiment analysis on 
 
 
 ## Acknowledgements
-Special thanks to Pr. Elaachak Lotfi for his guidance and support throughout this project.
+Special thanks to Pr. Elaachak Lotfi for his guidance and support throughout this LAB.
